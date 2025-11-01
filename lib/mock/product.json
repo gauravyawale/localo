@@ -1,0 +1,28 @@
+[
+  {
+    "id": "p1",
+    "shopId": "s1",
+    "name": "A4 Notebook",
+    "images": ["/images/products/p1-1.png"],
+    "details": "100-page ruled notebook",
+    "unit": "piece",
+    "quantityAvailable": 100,
+    "price": 60,
+    "discount": 10,
+    "gst": 5,
+    "status": "available"
+  },
+  {
+    "id": "p2",
+    "shopId": "s1",
+    "name": "Gel Pen Pack",
+    "images": ["/images/products/p2-1.png"],
+    "details": "Pack of 5 gel pens",
+    "unit": "pack",
+    "quantityAvailable": 50,
+    "price": 120,
+    "discount": 0,
+    "gst": 12,
+    "status": "available"
+  }
+]

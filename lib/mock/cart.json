@@ -1,0 +1,12 @@
+[
+  {
+    "id": "c1",
+    "userId": "u1",
+    "shopId": "s1",
+    "items": [
+      { "productId": "p1", "qty": 2 },
+      { "productId": "p2", "qty": 1 }
+    ],
+    "createdAt": "2025-10-26T10:15:00Z"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "s1",
+    "name": "Stationery Mart",
+    "owner": "u2",
+    "bannerImage": "/images/shops/s1-banner.png",
+    "profilePhoto": "/images/shops/s1-profile.png",
+    "details": "Your one-stop stationery store for all school and office needs.",
+    "address": "Shop 22, Market Yard, Pune",
+    "registrationId": "REGS12345",
+    "registrationCertificate": "/docs/regcert.pdf",
+    "pan": "ABCDE1234F",
+    "category": "stationery",
+    "registrationYear": 2020,
+    "discount": 5,
+    "gstNo": "27ABCDE1234F1Z5",
+    "mobile": "+919998887776",
+    "email": "shopowner@example.com",
+    "isVerified": true,
+    "status": "active"
+  }
+]

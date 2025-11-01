@@ -1,0 +1,15 @@
+[
+  {
+    "id": "o1",
+    "userId": "u1",
+    "shopId": "s1",
+    "items": [
+      { "productId": "p1", "qty": 2, "price": 60, "discount": 10 },
+      { "productId": "p2", "qty": 1, "price": 120, "discount": 0 }
+    ],
+    "totalPrice": 222,
+    "paymentMode": "COD",
+    "status": "Pending",
+    "createdAt": "2025-10-26T11:00:00Z"
+  }
+]

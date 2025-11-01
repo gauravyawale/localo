@@ -1,0 +1,32 @@
+[
+  {
+    "id": "u1",
+    "name": "Gaurav Yawale",
+    "email": "gaurav@example.com",
+    "mobile": "+919876543210",
+    "profilePhoto": "/images/users/u1.png",
+    "isVerifiedUser": true,
+    "role": "customer",
+    "address": {
+      "line1": "101, MG Road",
+      "city": "Pune",
+      "state": "MH",
+      "pincode": "411001"
+    }
+  },
+  {
+    "id": "u2",
+    "name": "Stationery Mart Owner",
+    "email": "shopowner@example.com",
+    "mobile": "+919998887776",
+    "profilePhoto": "/images/users/u2.png",
+    "isVerifiedUser": true,
+    "role": "seller",
+    "address": {
+      "line1": "Shop 22, Market Yard",
+      "city": "Pune",
+      "state": "MH",
+      "pincode": "411037"
+    }
+  }
+]
