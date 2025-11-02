@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Restaurants",
+    "id": "category_restaurants",
+    "shops": [
+      {
+        "id": "shop_1",
+        "name": "Café 9",
+        "image": "/assets/shops/cloth-shop-2.jpg",
+        "rating": 4.5,
+        "distance": "1.2 km",
+        "deliveryTime": "25-35 min",
+        "isOpen": true,
+        "tags": ["Italian", "Coffee", "Snacks"],
+        "offers": "20% OFF on first order"
+      },
+      {
+        "id": "shop_2",
+        "name": "Domino’s Pizza",
+        "image": "/assets/shops/cloth-shop-2.jpg",
+        "rating": 4.3,
+        "distance": "2.0 km",
+        "deliveryTime": "30-40 min",
+        "isOpen": false,
+        "tags": ["Pizza", "Fast Food"]
+      }
+    ]
+  },
+  {
+    "title": "Groceries",
+    "id": "category_groceries",
+    "shops": [
+      {
+        "id": "shop_3",
+        "name": "FreshMart",
+        "image": "/assets/shops/cloth-shop-2.jpg",
+        "rating": 4.7,
+        "deliveryTime": "10-20 min",
+        "distance": "500 m",
+        "tags": ["Organic", "Fruits", "Vegetables"],
+        "offers": "Free delivery above ₹299"
+      },
+      {
+        "id": "shop_4",
+        "name": "Green Basket",
+        "image": "/assets/shops/cloth-shop-2.jpg",
+        "rating": 4.2,
+        "tags": ["Dairy", "Essentials"]
+      }
+    ]
+  },
+  {
+    "title": "Clothing",
+    "id": "category_clothing",
+    "shops": [
+      {
+        "id": "shop_5",
+        "name": "TrendyFit",
+        "image": "/assets/shops/cloth-shop-2.jpg",
+        "rating": 4.6,
+        "tags": ["Men", "Casual", "T-Shirts"],
+        "offers": "Flat 15% OFF"
+      },
+      {
+        "id": "shop_6",
+        "name": "UrbanWear",
+        "image": "/assets/shops/cloth-shop-2.jpg",
+        "rating": 4.4,
+        "tags": ["Women", "Dresses", "Casual"]
+      }
+    ]
+  },
+  {
+    "title": "Sports",
+    "id": "category_sports",
+    "shops": [
+      {
+        "id": "shop_7",
+        "name": "Sportify",
+        "image": "/assets/shops/cloth-shop-2.jpg",
+        "rating": 4.8,
+        "tags": ["Cricket", "Football"],
+        "offers": "Buy 1 Get 1 on Shoes"
+      },
+      {
+        "id": "shop_8",
+        "name": "PowerPlay",
+        "image": "/assets/shops/cloth-shop-2.jpg",
+        "rating": 4.5,
+        "tags": ["Gym", "Accessories"]
+      }
+    ]
+  }
+]

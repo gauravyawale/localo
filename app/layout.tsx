@@ -1,7 +1,7 @@
-import "../styles/globals.css";
-import { ThemeProvider } from "@/providers/ThemeProvider";
-import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
+import Header from "@/components/layouts/Header";
+import { ThemeProvider } from "@/providers/ThemeProvider";
+import "@/styles/globals.css";
 
 export const metadata = {
   title: "Localo - Your Local Marketplace",
