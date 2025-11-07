@@ -2,19 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-
-interface ProductCardProps {
-  name: string;
-  images: string[];
-  details: string;
-  price: number;
-  discount: number;
-  gst: number;
-  isAvailable: boolean;
-  tags?: string[];
-  id: string;
-  shopId: string;
-}
+import type { ProductCardProps } from "@/types/components/landing";
+import { useCartStore } from "@/store/useCartStore";
 
 export const ProductCard = ({
   name,
@@ -28,7 +17,19 @@ export const ProductCard = ({
   id,
   shopId,
 }: ProductCardProps) => {
+  const { addItem } = useCartStore();
   const discountedPrice = price - (price * discount) / 100;
+
+  const handleAddToCart = () => {
+    addItem({
+      id: id,
+      name: name,
+      qty: 1,
+      price: price,
+      shopId: shopId,
+      discount: discount,
+    });
+  };
 
   return (
     <Link href={`/product/${id}`} className="block">
@@ -99,11 +100,12 @@ export const ProductCard = ({
           </div>
         )}
         <button
-          className="mt-4 w-full bg-primary text-white text-sm font-medium py-2 rounded-lg hover:bg-primary/90 transition cursor-pointer"
+          className="mt-4 w-full bg-primary text-sm font-medium py-2 rounded-lg hover:bg-primary/90 transition cursor-pointer border"
           disabled={!isAvailable}
           type="button"
           onClick={(e) => {
             e.preventDefault();
+            handleAddToCart();
           }}
         >
           Add to cart

@@ -1,8 +1,17 @@
+"use client";
+import useSWR from "swr";
 import { CategorySection } from "@/components/landing/CategorySelection";
 import { SearchBar } from "@/components/landing/SearchBar";
-import categoryData from "@/lib/mock/categoryData.json";
+import { fetcher } from "@/lib/fetcher";
+import { useCategorisedShopStore } from "@/store/useCategorisedShop";
 
 export default function LandingPage() {
+  const { data, isLoading } = useSWR("/api/shops", fetcher);
+  const { setCategorisedShops, categorisedShops } = useCategorisedShopStore();
+
+  if (data && categorisedShops.length === 0) {
+    setCategorisedShops(data);
+  }
   return (
     <>
       <section className="flex flex-col items-center justify-center py-24 text-center">
@@ -21,7 +30,7 @@ export default function LandingPage() {
       </section>
       <main className="p-6 space-y-6">
         <SearchBar />
-        {categoryData.map((category) => (
+        {categorisedShops.map((category) => (
           <CategorySection key={category.id} {...category} />
         ))}
       </main>
